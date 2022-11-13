@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela i forma</title>
+    <link rel="stylesheet" href="CSS/style.css">
+
+
+
+
+</head>
+
+<body>
+    <table>
+
+        <tr>
+            <th>Ime</th>
+            <th>Prezime</th>
+            <th>Broj telefona</th>
+            <th>E-mail</th>
+            <th>Ažuriraj</th>
+            <th>Izbriši</th>
+        </tr>
+        <tbody id="tabel"> </tbody><!--Izbacila sam ovaj tr gore iz tbody da ostane prazan prazan, ovo sam sana skontala-->
+    </table>
+
+
+    <div class="flex-container">
+        <form id="form">
+            <div class="txt_field">
+                <input type="text" id="fname" required placeholder="Ime">
+            </div>
+            <div class="txt_field">
+                <input type="text" id="lname" required placeholder="Prezime">
+            </div>
+            <div class="txt_field">
+                <input type="text" id="telefon" required placeholder="Broj telefona">
+            </div>
+            <div class="txt_field">
+                <input type="email" id="email" required placeholder="E-mail">
+            </div>
+            <div class="button">
+                <input type="button" onclick="create()" id="submit" value="DODAJ">
+            </div>
+
+
+        </form>
+    </div>
+
+    <script src="js/script.js">
+    </script>
+</body>
+
+</html>
